@@ -3,3 +3,12 @@ body {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   padding: 2em;
 }
+
+p {
+  margin: 0;
+  font-size: small;
+}
+
+div {
+  margin-top: 1em;
+}
