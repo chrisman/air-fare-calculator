@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Air Fare Calculator</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <header>
+    <h1>Air Fare Calculator</h1>
+  </header>
+  <main>
+    <form action="index.html" method="GET">
+      <p>Departure City</p>
+      <p>
+        <select name="departure" id="departure">
+          <option value="" disabled selected>Choose a city</option>
+          <option value="newyork">New York</option>
+          <option value="chicago">Chicago</option>
+          <option value="losangeles">Los Angeles</option>
+        </select>
+      </p>
+      <p>Arrival City</p>
+      <p>
+        <select name="arrival" id="arrival">
+          <option value="" disabled selected>Choose a city</option>
+          <option value="newyork">New York</option>
+          <option value="chicago">Chicago</option>
+          <option value="losangeles">Los Angeles</option>
+        </select>
+      </p>
+      <p>
+        <button id="calculate">Calculate Price</button>
+      </p>
+    </form>
+    <div id="price"></div>
+  </main>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"> </script>
+  <script type="text/javascript" src="js/logic.js"> </script>
+  <script type="text/javascript" src="js/app.js"> </script>
+</body>
+</html>
