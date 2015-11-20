@@ -33,3 +33,18 @@ describe('getCheckedBaggageFee', function(){
     expect(code.getCheckedBaggageFee(-5)).to.equal(0);
   });
 });
+
+describe('getClass', function(){
+  it('should increase the price by the specified amount',function(){
+    expect(code.getClass('coach')).to.equal(0);
+    expect(code.getClass('business')).to.equal(200);
+    expect(code.getClass('first')).to.equal(500);
+  });
+});
+
+describe('getWifi', function(){
+  it('should increase the price by 12 when a user checks the WiFi checkbox',function(){
+    expect(code.getWifi(true)).to.equal(12);
+    expect(code.getWifi(false)).to.equal(0);
+  });
+});

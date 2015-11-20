@@ -11,5 +11,11 @@ module.exports = {
   },
   getCheckedBaggageFee: function(n) {
     return (n > 0) ? (n * 25) : 0;
+  },
+  getClass: function(s) {
+    return (s === 'business') ? 200 : (s === 'first') ? 500 : 0;
+  },
+  getWifi: function(b) {
+    return (b) ? 12 : 0;
   }
 }

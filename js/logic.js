@@ -11,3 +11,9 @@ var getPrice = function(f, t) {
 var getCheckedBaggageFee = function(n) {
   return (n > 0) ? (n * 25) : 0;
 }
+var getClass = function(s) {
+  return (s === 'business') ? 200 : (s === 'first') ? 500 : 0;
+}
+var getWifi = function(b) {
+  return (b) ? 12 : 0;
+}
