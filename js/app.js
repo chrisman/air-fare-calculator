@@ -1,5 +1,4 @@
 $(document).ready(function(){
-  // console.log("it's go time."); // sanity check
   $('#calculate').on('click',function(e){
     var departure = $('#departure option:selected').val();
     var arrival = $('#arrival option:selected').val();

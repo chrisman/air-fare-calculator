@@ -1,4 +1,4 @@
-var code = require('../js/logic');
+var code = require('../js/logictest');
 var expect = require('chai').expect;
 
 describe('getPrice', function(){

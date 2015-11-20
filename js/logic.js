@@ -1,4 +1,3 @@
-
 var getPrice = function(f, t) {
   // alert("hello");
   if (f === t) return 0;
