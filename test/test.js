@@ -48,3 +48,10 @@ describe('getWifi', function(){
     expect(code.getWifi(false)).to.equal(0);
   });
 });
+
+describe('getDiscount', function(){
+  it('should reduce price by 10% when a user enters the discount code 10OFF',function(){
+    expect(code.getDiscount('10OFF')).to.equal(0.1);
+    expect(code.getDiscount('20OFF')).to.equal(0.2);
+  });
+});

@@ -5,13 +5,15 @@ $(document).ready(function(){
     var travelClass = $('#class option:selected').val();
     var wifi = $('#wifi').prop('checked');
     var bags = $('#bags').val();
+    var discount = $('#discount').val();
 
     var price = getPrice(departure, arrival);
     var checkedBaggageFee = getCheckedBaggageFee(bags);
     var travelClassFee = getClass(travelClass);
     var wifiFee = getWifi(wifi);
-    
-    var totalCost = price + checkedBaggageFee + travelClassFee + wifiFee;
+    var discountOff = getDiscount(discount);
+
+    var totalCost = (price - (price * discountOff)) + checkedBaggageFee + travelClassFee + wifiFee;
 
     var msg = "Your price is $" + totalCost;
     $('#price').text(msg);

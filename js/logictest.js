@@ -17,5 +17,8 @@ module.exports = {
   },
   getWifi: function(b) {
     return (b) ? 12 : 0;
+  },
+  getDiscount: function(s) {
+    return (s === '10OFF') ? 0.1 : (s === '20OFF') ? 0.2 : 0;
   }
 }
