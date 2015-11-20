@@ -20,3 +20,16 @@ describe('getPrice', function(){
     expect(code.getPrice('newyork','losangeles')).to.equal(545);
   });
 });
+
+describe('getCheckedBaggageFee', function(){
+  it('should increase the price by 25 dollars per bag',function(){
+    expect(code.getCheckedBaggageFee(1)).to.equal(25);
+    expect(code.getCheckedBaggageFee(2)).to.equal(50);
+    expect(code.getCheckedBaggageFee(4)).to.equal(100);
+    expect(code.getCheckedBaggageFee(0)).to.equal(0);
+  });
+  it('should NOT go down if the user enters a negative number',function(){
+    expect(code.getCheckedBaggageFee(-1)).to.equal(0);
+    expect(code.getCheckedBaggageFee(-5)).to.equal(0);
+  });
+});
