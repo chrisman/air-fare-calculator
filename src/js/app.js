@@ -1,4 +1,4 @@
-var calculate = require('./logictest');
+var calculate = require('./logic');
 
 $(document).ready(function(){
   $('#calculate').on('click',function(e){
