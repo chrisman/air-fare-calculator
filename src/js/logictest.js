@@ -1,6 +1,5 @@
 module.exports = {
-   getPrice: function(f, t) {
-    // alert("hello");
+  getPrice: function(f, t) {
     if (f === t) return 0;
     if (f === 'chicago' && t === 'losangeles') return 350;
     if (f === 'losangeles' && t === 'chicago') return 350;
