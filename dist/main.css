@@ -6,4 +6,9 @@ body {
 
 p {
   margin: 0;
+  font-size: small;
+}
+
+div {
+  margin-top: 1em;
 }
