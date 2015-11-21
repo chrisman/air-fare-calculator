@@ -11,46 +11,60 @@
   </header>
   <main>
     <form action="index.html" method="GET">
-      <p>Departure City</p>
-      <p>
-        <select name="departure" id="departure">
-          <option value="" disabled selected>Choose a city</option>
-          <option value="newyork">New York</option>
-          <option value="chicago">Chicago</option>
-          <option value="losangeles">Los Angeles</option>
-        </select>
-      </p>
-      <p>Arrival City</p>
-      <p>
-        <select name="arrival" id="arrival">
-          <option value="" disabled selected>Choose a city</option>
-          <option value="newyork">New York</option>
-          <option value="chicago">Chicago</option>
-          <option value="losangeles">Los Angeles</option>
-        </select>
-      </p>
-      <p>Number of checked bags ($25 / bag)</p>
-      <p>
-        <input type="number" name="bags" id="bags">
-      </p>
-      <p>Class</p>
-      <p>
-        <select name="class" id="class">
-          <option value="coach" selected>coach</option>
-          <option value="business">business</option>
-          <option value="first">first</option>
-        </select>
-      </p>
-      <p>
-        <input type="checkbox" name="wifi" id="wifi"> Wifi ($12)
-      </p>
-      <p>Discount code</p>
-      <p>
-        <input type="input" name="discount" id="discount">
-      </p>
-      <p>
-        <button id="calculate">Calculate Price</button>
-      </p>
+<div>
+  <p>Departure City</p>
+  <p>
+    <select name="departure" id="departure">
+      <option value="" disabled selected>Choose a city</option>
+      <option value="newyork">New York</option>
+      <option value="chicago">Chicago</option>
+      <option value="losangeles">Los Angeles</option>
+    </select>
+  </p>
+</div>
+<div>
+  <p>Arrival City</p>
+  <p>
+    <select name="arrival" id="arrival">
+      <option value="" disabled selected>Choose a city</option>
+      <option value="newyork">New York</option>
+      <option value="chicago">Chicago</option>
+      <option value="losangeles">Los Angeles</option>
+    </select>
+  </p>
+</div>
+<div>
+  <p>Number of checked bags ($25 / bag)</p>
+  <p>
+    <input type="number" name="bags" id="bags">
+  </p>
+</div>
+<div>
+  <p>Class</p>
+  <p>
+    <select name="class" id="class">
+      <option value="coach" selected>coach</option>
+      <option value="business">business (+ $200)</option>
+      <option value="first">first (+ $500)</option>
+    </select>
+  </p>
+</div>
+<div>
+  <p>
+    <input type="checkbox" name="wifi" id="wifi"> Wifi ($12)
+  </p>
+</div>
+<div>
+  <p>Discount code</p>
+  <p>
+    <input type="input" name="discount" id="discount">
+  </p>
+</div>
+<div>
+  <p>
+    <button id="calculate">Calculate Price</button>
+  </p>
+</div>
     </form>
     <div id="price"></div>
   </main>
