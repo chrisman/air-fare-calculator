@@ -1,0 +1,26 @@
+{
+  "name": "air-travel-calculator",
+  "version": "1.0.0",
+  "description": "1. Fork, clone and open the project 1. Create a standard HTML project files / folders:   * index.html   * css     * app.css   * js     * logic.js     * app.js 1. Commit and push / submit a pull request 1. Work through the stories   - commit and push after completing each story 1. Validate your HTML 1. Deploy to S3 1. Enter your URL in the project in http://students.galvanize.com",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^12.0.1",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisman/air-travel-calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisman/air-travel-calculator/issues"
+  },
+  "homepage": "https://github.com/chrisman/air-travel-calculator#readme"
+}
